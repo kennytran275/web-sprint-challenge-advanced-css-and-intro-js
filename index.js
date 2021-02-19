@@ -246,11 +246,24 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   /*
-  
+  empty array 
+  for loop whole array
+  target array[i].years.split(" ") - split by spaces 
+  return ["1900","-","2100"], need variable
+  if statement - if newArray[0] >= 1900 && newArray[1] < 2000 , add to empty array
+  return array
   */
+let twentiesArtists = [];
+for (let i = 0; i < array.length; i++) {
+  let removedSpaces = array[i].years.split(" ");
+  if (removedSpaces[0] >= "1900" && removedSpaces[2] <= "2000") {
+    twentiesArtists.push(array[i].name);
+  }
+}
+return twentiesArtists;
 }
 
-
+console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
