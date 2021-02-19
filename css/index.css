@@ -214,8 +214,12 @@ button:hover {
     width: 100%;
   }
 
+  h1 {
+    font-size: 5rem;
+  }
+
   button {
-    padding: 1% 7%;
+    padding: 1% 5%;
   }
 
   .title-container hr {
@@ -226,18 +230,24 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* 
-        Need to add padding or margin
-        */
+    width: 70%;
   }
 
   .artist {
     width: 100%;
-    margin: 5% 0;
+    margin: 2% 0;
   }
 
   .artist img {
     height: 20rem;
     width: 70%;
+  }
+
+  .artist a {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 75%;
   }
 }
