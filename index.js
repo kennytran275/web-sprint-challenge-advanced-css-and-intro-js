@@ -265,14 +265,6 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
-  /*
-  empty array 
-  for loop whole array
-  target array[i].years.split(" ") - split by spaces 
-  return ["1900","-","2100"], need variable
-  if statement - if newArray[0] >= 1900 && newArray[1] < 2000 , add to empty array
-  return array
-  */
   let twentiesArtists = [];
   for (let i = 0; i < array.length; i++) {
     let removedSpaces = array[i].years.split(" ");
